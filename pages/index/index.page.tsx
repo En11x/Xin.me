@@ -8,7 +8,7 @@ const documentProps = {
 
 const Page: Component = () => {
   return (
-    <main>
+    <main py-8vh px-6 max-w-76ch mx-auto xl:text-lg dark:prose-invert>
       <Hello  />
     </main>
   )
