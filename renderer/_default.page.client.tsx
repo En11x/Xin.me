@@ -4,6 +4,7 @@ import { PageContext } from './types'
 
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
+import './style.css'
 
 export const render = (pageContext: PageContextBuiltIn & PageContext) => {
   const content = document.getElementById('root')

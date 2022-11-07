@@ -19,8 +19,16 @@ function render(pageContext: PageContext) {
         <meta name="description" content="${description}" />
         <title>${title}</title>
         ${dangerouslySkipEscape(generateHydrationScript())}
+        <script>
+          (function() {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            if (prefersDark){
+              document.documentElement.classList.toggle('dark', true)
+            }
+          })()
+        </script>
       </head>
-      <body>
+      <body class="dark:text-white dark:bg-hex-121212">
         <div id="root">${dangerouslySkipEscape(html)}</div>
       </body>
     </html>
