@@ -29,7 +29,7 @@ function render(pageContext: PageContext) {
           })()
         </script>
       </head>
-      <body class="dark:text-white dark:bg-hex-121212">
+      <body class="font-recursive dark:text-white dark:bg-hex-121212">
         <div id="root">${dangerouslySkipEscape(html)}</div>
       </body>
     </html>

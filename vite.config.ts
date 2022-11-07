@@ -2,7 +2,12 @@ import solid from 'vite-plugin-solid'
 import ssr from 'vite-plugin-ssr/plugin'
 import { UserConfig } from 'vite'
 import Unocss from 'unocss/vite'
-import { presetAttributify, presetIcons, presetUno } from 'unocss'
+import {
+  presetAttributify,
+  presetIcons,
+  presetUno,
+  presetWebFonts,
+} from 'unocss'
 import { presetTypography } from '@unocss/preset-typography'
 
 const config: UserConfig = {
@@ -12,12 +17,17 @@ const config: UserConfig = {
       presets: [
         presetAttributify(),
         presetUno({
-          dark:'class'
+          dark: 'class',
         }),
         presetTypography(),
         presetIcons({
           scale: 1.2,
           warn: true,
+        }),
+        presetWebFonts({
+          fonts: {
+            recursive: 'Recursive',
+          },
         }),
       ],
     }),
