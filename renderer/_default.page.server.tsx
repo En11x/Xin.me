@@ -6,7 +6,7 @@ function render(pageContext: PageContext) {
   const { Page, pageProps, documentProps } = pageContext
 
   const html = renderToString(() => <Page {...pageProps} />)
-  const title = (documentProps && documentProps.title) || 'X1n'
+  const title = (documentProps && documentProps.title) || 'A simple website'
   const description =
     (documentProps && documentProps.description) || 'X1n, Developer.'
 
@@ -17,6 +17,7 @@ function render(pageContext: PageContext) {
         <link rel="icon" href="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${description}" />
+        <link rel="icon" href="/xin.ico"  />
         <title>${title}</title>
         ${dangerouslySkipEscape(generateHydrationScript())}
         <script>

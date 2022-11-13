@@ -3,7 +3,7 @@ import { Hello } from '../components/Hello'
 import { Nav } from '../components/Nav'
 
 const documentProps = {
-  title: 'X1n',
+  title: 'A simple website',
   description: 'X1n, Developer.',
 }
 
