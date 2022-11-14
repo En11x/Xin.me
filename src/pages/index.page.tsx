@@ -1,6 +1,6 @@
 import { Component } from 'solid-js'
+import { Header } from '../components/Header'
 import { Hello } from '../components/Hello'
-import { Nav } from '../components/Nav'
 
 const documentProps = {
   title: 'A simple website',
@@ -9,10 +9,12 @@ const documentProps = {
 
 const Page: Component = () => {
   return (
-    <main py-8vh px-6 max-w-76ch mx-auto xl:text-lg dark:prose-invert>
-      <Nav />
-      <Hello />
-    </main>
+    <>
+      <Header />
+      <main d-center justify-start dark:prose-invert>
+        <Hello />
+      </main>
+    </>
   )
 }
 

@@ -6,7 +6,7 @@ function render(pageContext: PageContext) {
   const { Page, pageProps, documentProps } = pageContext
 
   const html = renderToString(() => <Page {...pageProps} />)
-  const title = (documentProps && documentProps.title) || 'A simple website'
+  const title = (documentProps && documentProps.title) || 'Front End Developer'
   const description =
     (documentProps && documentProps.description) || 'X1n, Developer.'
 
@@ -29,7 +29,7 @@ function render(pageContext: PageContext) {
           })()
         </script>
       </head>
-      <body class="font-recursive dark:text-white dark:bg-hex-121212">
+      <body class="font-recursive dark:text-white dark:bg-hex-212121">
         <div id="root">${dangerouslySkipEscape(html)}</div>
       </body>
     </html>
