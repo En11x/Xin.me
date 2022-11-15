@@ -1,14 +1,22 @@
-import { hydrate } from 'solid-js/web'
-import { PageContextBuiltIn } from 'vite-plugin-ssr'
+import { hydrate, render as render_ } from 'solid-js/web'
+import { PageContextBuiltInClient } from 'vite-plugin-ssr/client'
 import { PageContext } from './types'
 
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
 import '../src/style/main.css'
 
-export const render = (pageContext: PageContextBuiltIn & PageContext) => {
-  const content = document.getElementById('root')
-  const { Page } = pageContext
+let dispose: () => void
 
-  hydrate(() => <Page></Page>, content!)
+export const render = (pageContext: PageContextBuiltInClient & PageContext) => {
+  const content = document.getElementById('root')
+  const { Page, pageProps } = pageContext
+
+  if (dispose) dispose()
+
+  if (pageContext.isHydration) {
+    dispose = hydrate(() => <Page {...pageProps} />, content!)
+  } else {
+    render_(() => <Page {...pageProps} />, content!)
+  }
 }
