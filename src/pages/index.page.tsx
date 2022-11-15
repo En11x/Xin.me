@@ -1,6 +1,7 @@
 import { Component } from 'solid-js'
 import { Header } from '../components/Header'
-import { Hello } from '../components/Hello'
+import { Hero } from '../components/Hero'
+import Projects from '../components/Projects'
 
 const documentProps = {
   title: 'A simple website',
@@ -12,7 +13,8 @@ const Page: Component = () => {
     <>
       <Header />
       <main d-center justify-start dark:prose-invert>
-        <Hello />
+        <Hero />
+        <Projects />
       </main>
     </>
   )

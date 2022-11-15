@@ -9,14 +9,14 @@ export const Header = () => {
       <div inline-flex gap-2 justify-between items-center p-x8 class="w-100%">
         <Avatar />
         <div inline-flex gap-2>
-          <a
+          {/* <a
             icon-btn
             i-carbon-logo-github
             rel="noreferrer"
             href="https://github.com/XlnOnly/Xin.me"
             target="_blank"
             title="GitHub"
-          />
+          /> */}
           <button icon-btn onClick={(e) => setDark()}>
             <div dark:i-carbon-moon i-carbon-sun />
           </button>
