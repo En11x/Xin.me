@@ -34,12 +34,13 @@ const config: UserConfig = {
           },
         ],
         ['theme-color', { color: '#7746f1' }],
+        ['border-theme', { border: '1px solid #7746f1' }],
         ['border-b-theme', { 'border-bottom': '1px solid #7746f1' }],
       ],
       shortcuts: [
         [
           'btn',
-          'px-4 py-1 rounded inline-block theme-color text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
+          'px-4 py-1 rounded inline-block theme-color hover:text-white cursor-pointer hover:bg-purple-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
         ],
         [
           'icon-btn',

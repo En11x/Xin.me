@@ -6,7 +6,7 @@ export default () => {
     {
       name: 'Xinjs',
       desc: 'A wanton js libray.',
-      link: 'https://github.com/XlnOnly/xinjs',
+      link: 'https://xlnonly.github.io/xinjs/',
       icon: 'i-twemoji-hammer-and-pick',
     },
     {
@@ -16,7 +16,7 @@ export default () => {
       icon: 'i-twemoji-laptop',
     },
     {
-      name: 'Airdrwa',
+      name: 'Airdraw',
       desc: 'A simple draw form tldraw.',
       link: 'https://github.com/XlnOnly/Airdraw',
       icon: 'i-twemoji-pencil',
@@ -34,7 +34,7 @@ export default () => {
 
   return (
     <>
-      <h2 text-3xl mt-14 mb-4 font-semibold w-100>
+      <h2 text-3xl mt-8 mb-4 font-semibold w-100>
         <span flex-1>Projects</span>
         <div class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer">
           <div onClick={openGithub} class="m-2 i-ri-arrow-right-up-line"></div>

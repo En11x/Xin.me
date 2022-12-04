@@ -1,4 +1,8 @@
 export const Hero = () => {
+  const goToResume = () => {
+    window.open('https://xlnonly.github.io/resume/', '_blank')
+  }
+
   return (
     <header mt-12 md:mt-18>
       <h1 text-5xl font-bold>
@@ -12,11 +16,16 @@ export const Hero = () => {
           <span>Front-end developer.</span>
         </div>
         <div mt-2>
-          <span>Currently working at SpeedTech.</span>
+          <span>Currently working at Speedup Tech.</span>
         </div>
         <div mt-2>
           <span>I like coding / playing.</span>
         </div>
+      </div>
+      <div class="mt-8">
+        <button class="btn border-theme" onClick={goToResume}>
+          resume
+        </button>
       </div>
     </header>
   )
