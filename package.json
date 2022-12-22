@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.46.2",
-    "solid-js": "^1.6.1"
+    "solid-js": "^1.6.1",
+    "typed.js": "^2.0.12"
   }
 }

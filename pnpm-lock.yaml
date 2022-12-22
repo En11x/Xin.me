@@ -8,6 +8,7 @@ specifiers:
   '@unocss/preset-typography': ^0.46.2
   '@unocss/reset': ^0.46.2
   solid-js: ^1.6.1
+  typed.js: ^2.0.12
   typescript: ^4.8.4
   unocss: ^0.46.2
   vite: ^3.2.2
@@ -17,6 +18,7 @@ specifiers:
 dependencies:
   '@unocss/reset': 0.46.2
   solid-js: 1.6.1
+  typed.js: 2.0.12
 
 devDependencies:
   '@iconify-json/carbon': 1.1.9
@@ -1651,6 +1653,10 @@ packages:
   /ts-toolbelt/9.6.0:
     resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}
     dev: true
+
+  /typed.js/2.0.12:
+    resolution: {integrity: sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==}
+    dev: false
 
   /typescript/4.8.4:
     resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
